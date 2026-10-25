@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+chenchu-site/
+├─ content/posts/*.md            # blog posts (markdown + frontmatter)
+├─ public/static/sources/
+│  ├─ CHYS_Resume.pdf            # LaTeX output, served as-is
+│  └─ CHYS_CV.pdf
+├─ src/
+│  ├─ app/
+│  │  ├─ layout.tsx              # Header + Footer + theme script (wraps every page)
+│  │  ├─ page.tsx                # Home: intro text + Resume and CV download links
+│  │  └─ blog/
+│  │     ├─ page.tsx             # post list
+│  │     └─ [slug]/page.tsx      # single post
+│  ├─ components/                # Header, Footer, ThemeToggle
+│  └─ lib/
+│     ├─ site.ts                 # links, email, PDF paths
+│     └─ posts.ts                # reads and renders markdown at build time
+└─ next.config.ts                # output: "export" (static HTML in ./out)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Static site built with Next.js (App Router), TypeScript and Tailwind CSS. `next build` exports plain HTML/CSS/JS to `out/`, which Cloudflare serves. There is no server runtime.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Routes
 
-## Learn More
+| URL | Source |
+| --- | --- |
+| `/` | `src/app/page.tsx` (intro, Resume and CV download links) |
+| `/blog/` | `src/app/blog/page.tsx` (post list) |
+| `/blog/<slug>/` | `src/app/blog/[slug]/page.tsx` (one page per `.md` file) |
+| `/static/sources/CHYS_Resume.pdf` | `public/static/sources/` (static file) |
+| `/static/sources/CHYS_CV.pdf` | `public/static/sources/` (static file) |
 
-To learn more about Next.js, take a look at the following resources:
+### Data flow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Blog:** `content/posts/*.md` is read by `src/lib/posts.ts` at build time, rendered to HTML (GFM, KaTeX math, syntax highlighting) and written out as static pages. The filename becomes the URL slug. Posts with `draft: true` are excluded from production builds.
+- **PDFs:** the resume and CV are compiled from LaTeX and committed to `public/static/sources/`. They are served as-is, and the home page links to both from `src/lib/site.ts`. To update one, recompile, overwrite the file and push.
+- **Shared config:** links, email and PDF paths live in `src/lib/site.ts` and are used by the header, footer and home page.
+- **Theme:** colors are CSS variables at the top of `src/app/globals.css`. Dark mode is a `dark` class on `<html>`, set by an inline script in `layout.tsx` (before first paint) and by `ThemeToggle`.
