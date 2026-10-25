@@ -1,5 +1,5 @@
-// src/app/page.tsx
-export default function Home() {
+// src/app/Blog/page.tsx
+export default function Blog() {
   return (
     <>
       <section className="p-4">
@@ -9,8 +9,6 @@ export default function Home() {
           share a little about myself and what I’m working on.
         </p>
       </section>
-      
-      {/* You can add more portfolio sections here naturally */}
     </>
   );
 }

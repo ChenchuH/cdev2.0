@@ -12,7 +12,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="text-center p-4">
+    <footer className="text-center p-4 text-xs">
       <p>© {currentYear} Chenchu Yakasiri - thanks for visiting</p>
     </footer>
   );
