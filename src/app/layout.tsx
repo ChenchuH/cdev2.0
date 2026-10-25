@@ -15,17 +15,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chenchu's Portfolio",
-  description: "A personal portfolio",
+  title: "YakaHome",
+  description: "Chenchu Yakasiri's personal website and portfolio. Learn about my projects, blog posts, and more.",
 };
 
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) 
 {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
         <Header />
-        {children}
+        <main className="grow">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

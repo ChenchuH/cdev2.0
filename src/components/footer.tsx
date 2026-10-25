@@ -12,8 +12,8 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="site-footer">
-      <p>© {currentYear} Chenchu</p>
+    <footer className="text-center p-4">
+      <p>© {currentYear} Chenchu Yakasiri - thanks for visiting</p>
     </footer>
   );
 }
