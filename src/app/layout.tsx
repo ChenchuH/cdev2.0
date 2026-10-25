@@ -15,7 +15,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "YakaHome",
+  title: "Chenchu.Dev",
+  icons: {
+    icon: [
+      {
+        url: "/Favicon_DarkMode.svg", 
+        media: "(prefers-color-scheme: dark)"
+      }, 
+      {
+        url: "/Favicon_LightMode.svg", 
+        media: "(prefers-color-scheme: light)"
+      }
+    ]
+  },
   description: "Chenchu Yakasiri's personal website and portfolio. Learn about my projects, blog posts, and more.",
 };
 
