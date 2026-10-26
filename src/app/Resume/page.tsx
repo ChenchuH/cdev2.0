@@ -12,14 +12,6 @@ export default function ResumePage() {
           href="mailto:ynchenchuh@icloud.com"
         >
           ynchenchuh@icloud.com
-        </a>{" "}
-        ·{" "}
-        <a className="text-blue-500 hover:underline" href="tel:+13103574896">
-          (310) 357-4896
-        </a>{" "}
-        ·{" "}
-        <a className="text-blue-500 hover:underline" href="https://chenchu.dev">
-          chenchu.dev
         </a>
       </p>
 
