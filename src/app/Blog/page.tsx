@@ -1,4 +1,11 @@
 // src/app/Blog/page.tsx
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "Blog - Chenchu.Dev",
+  description: "Read my latest blog posts and articles on various topics related to my learning, research, and projects.",
+};
+
 export default function Blog() {
   return (
     <>
