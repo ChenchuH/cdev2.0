@@ -3,7 +3,7 @@
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-  title: "Home - Chenchu.Dev",
+  title: "Home - chenchu.dev",
   description: "Chenchu Yakasiri's personal website and portfolio. Learn about my projects, blog posts, and more.",
 };
 

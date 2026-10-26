@@ -2,7 +2,7 @@
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-  title: "Blog - Chenchu.Dev",
+  title: "Blog - chenchu.dev",
   description: "Read my latest blog posts and articles on various topics related to my learning, research, and projects.",
 };
 
