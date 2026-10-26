@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import ReactMarkdown, { type Components } from "react-markdown";
 
 export const metadata: Metadata = {
-  title: "Resume - Chenchu Yakasiri Saravanan",
+  title: "Resume - chenchu.dev",
   description: "Resume of Chenchu Yakasiri Saravanan.",
 };
 
