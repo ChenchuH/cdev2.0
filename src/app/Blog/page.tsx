@@ -9,9 +9,17 @@ export const metadata: Metadata = {
 export default function Blog() {
   return (
     <>
-      <section>
-        <p className = "p-4">
-            Place holder for blog content. This is where I will share my thoughts, experiences, and insights on various topics related to my learning, research, and projects.
+      <section className="flex justify-center">
+        <p className = "p-4 ">
+          <li>
+            #1 Blog post title goes here.
+          </li>
+          <li>
+            #2 Blog post title goes here.
+          </li>
+          <li>
+            #3 Blog post title goes here.
+          </li>
         </p>
       </section>
     </>

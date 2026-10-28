@@ -26,34 +26,6 @@ export default function Home() {
 
       <section>
         <h2 className="mb-3 mt-7 font-mono text-xl font-bold text-neutral-200">
-          This site
-        </h2>
-
-        <p className="leading-relaxed text-neutral-400">
-          This is my personal website and blog. I'll use it to collect
-          thoughts and share projects. It also keeps my résumé and CV together
-          with updates on my activities and physics research.
-        </p>
-
-        <p className="mt-3 leading-relaxed text-neutral-400">
-          It's built with{" "}
-          <a className="text-blue-500 hover:underline" href="https://nextjs.org/">
-            Next.js
-          </a>
-          , React, TypeScript, and Tailwind CSS, and uses the Geist font. You
-          can view the source on{" "}
-          <a
-            className="text-blue-500 hover:underline"
-            href="https://github.com/ChenchuH/cdev2.0"
-          >
-            GitHub
-          </a>
-          .
-        </p>
-      </section>
-
-      <section>
-        <h2 className="mb-3 mt-7 font-mono text-xl font-bold text-neutral-200">
           Contact
         </h2>
 
