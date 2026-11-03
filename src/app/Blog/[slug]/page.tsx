@@ -9,7 +9,7 @@ type PageProps = {
 
 export default function BlogPostPage({ params }: PageProps) {
   return (
-    <article className="max-w-4xl p-4">
+    <article className="mx-auto w-full max-w-3xl px-6 py-12 sm:px-8 sm:py-16">
       <Suspense
         fallback={
           <p className="leading-relaxed text-neutral-400">Loading post...</p>
@@ -29,7 +29,7 @@ async function Post({ params }: PageProps) {
 
   return (
     <>
-      <h1 className="mb-4 font-mono text-xl font-bold text-neutral-200">
+      <h1 className="mb-6 font-sans text-3xl font-semibold tracking-tight text-neutral-100 sm:text-4xl">
         {post.title}
       </h1>
       <p className="text-sm text-neutral-400">{post.date}</p>
