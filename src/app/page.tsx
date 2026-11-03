@@ -31,13 +31,13 @@ export default function Home() {
 
         <div className="flex gap-6">
           <a
-            className="text-blue-500 hover:underline"
+            className="text-blue-500 transition-colors duration-200 hover:text-indigo-400"
             href="https://github.com/ChenchuH"
           >
             GitHub
           </a>
           <a
-            className="text-blue-500 hover:underline"
+            className="text-blue-500 transition-colors duration-200 hover:text-indigo-400"
             href="mailto:ynchenchuh@gmail.com"
           >
             Email

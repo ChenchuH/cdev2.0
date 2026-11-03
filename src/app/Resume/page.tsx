@@ -1,3 +1,9 @@
+export const metadata: Metadata = {
+  title: "Resume - chenchu.dev",
+  description:
+    "Chenchu Hemanth Yakasiri Saravanan Resume",
+};
+
 export default function ResumePage() {
   return (
     <article className="max-w-4xl p-4">
@@ -8,7 +14,7 @@ export default function ResumePage() {
       <p className="leading-relaxed text-neutral-400">
         US Permanent Resident ·{" "}
         <a
-          className="text-blue-500 hover:underline"
+          className="text-blue-500 transition-colors duration-200 hover:text-indigo-400"
           href="mailto:ynchenchuh@icloud.com"
         >
           ynchenchuh@icloud.com
@@ -110,7 +116,7 @@ export default function ResumePage() {
 
       <p className="mt-7 leading-relaxed text-neutral-400">
         <a
-          className="text-blue-500 hover:underline"
+          className="text-blue-500 transition-colors duration-200 hover:text-indigo-400"
           href="/Chenchu_Resume_2027.pdf"
           download
         >
