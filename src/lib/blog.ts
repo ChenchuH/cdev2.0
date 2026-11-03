@@ -1,3 +1,5 @@
+import { cacheLife } from "next/cache";
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -9,9 +11,10 @@ const CONTENT_URL =
   "https://raw.githubusercontent.com/ChenchuH/cdev2.0_blog_repo/master";
 
 export async function getPosts(): Promise<BlogPost[]> {
-  const response = await fetch(`${CONTENT_URL}/posts.json`, {
-    cache: "no-store",
-  });
+  "use cache";
+  cacheLife("minutes");
+
+  const response = await fetch(`${CONTENT_URL}/posts.json`);
 
   if (!response.ok) throw new Error("Could not load the blog post list.");
 
@@ -20,15 +23,15 @@ export async function getPosts(): Promise<BlogPost[]> {
 }
 
 export async function getPost(slug: string) {
+  "use cache";
+  cacheLife("minutes");
+
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) return null;
 
   const post = (await getPosts()).find((post) => post.slug === slug);
   if (!post) return null;
 
-  const response = await fetch(`${CONTENT_URL}/posts/${slug}.md`, {
-    cache: "no-store",
-  });
-
+  const response = await fetch(`${CONTENT_URL}/posts/${slug}.md`);
   if (!response.ok) return null;
 
   return { ...post, content: await response.text() };
