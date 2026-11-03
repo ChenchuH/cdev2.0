@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <article className="max-w-4xl p-4">
+    <article className="mx-auto w-full max-w-3xl px-6 py-12 sm:px-8 sm:py-16">
       <section>
-        <h1 className="mb-4 font-mono text-xl font-bold text-neutral-200">
+        <h1 className="mb-6 font-sans text-3xl font-semibold tracking-tight text-neutral-100 sm:text-4xl">
           Chenchu Yakasiri Saravanan
         </h1>
 
@@ -25,7 +25,7 @@ export default function Home() {
       </section>
 
       <section>
-        <h2 className="mb-3 mt-7 font-mono text-xl font-bold text-neutral-200">
+        <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
           Contact
         </h2>
 

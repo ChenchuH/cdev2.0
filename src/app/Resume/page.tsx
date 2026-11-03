@@ -6,8 +6,8 @@ export const metadata: Metadata = {
 
 export default function ResumePage() {
   return (
-    <article className="max-w-4xl p-4">
-      <h1 className="mb-4 font-mono text-xl font-bold text-neutral-200">
+    <article className="mx-auto w-full max-w-3xl px-6 py-12 sm:px-8 sm:py-16">
+      <h1 className="mb-6 font-sans text-3xl font-semibold tracking-tight text-neutral-100 sm:text-4xl">
         Chenchu Yakasiri Saravanan
       </h1>
 
@@ -21,7 +21,7 @@ export default function ResumePage() {
         </a>
       </p>
 
-      <h2 className="mb-3 mt-7 font-mono text-xl font-bold text-neutral-200">
+      <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Education
       </h2>
       <p className="leading-relaxed text-neutral-400">
@@ -31,11 +31,11 @@ export default function ResumePage() {
         Concentration: Experimental Condensed Matter Physics
       </p>
 
-      <h2 className="mb-3 mt-7 font-mono text-xl font-bold text-neutral-200">
+      <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Experience
       </h2>
 
-      <h3 className="mb-1 mt-4 font-mono text-xl font-bold text-neutral-200">
+      <h3 className="mb-1 mt-6 font-sans text-lg font-semibold text-neutral-100">
         Undergraduate Researcher — CSULB Nanoelectronics Group
       </h3>
       <p className="leading-relaxed text-neutral-400">
@@ -48,7 +48,7 @@ export default function ResumePage() {
         <li>Wrote CSULB’s updated Raman spectroscopy SOP and operated the Raman instrument.</li>
       </ul>
 
-      <h3 className="mb-1 mt-4 font-mono text-xl font-bold text-neutral-200">
+      <h3 className="mb-1 mt-6 font-sans text-lg font-semibold text-neutral-100">
         ADCS Engineer — CSULB Shark-Sat 1
       </h3>
       <p className="leading-relaxed text-neutral-400">
@@ -59,7 +59,7 @@ export default function ResumePage() {
         <li>Helped design detumble simulations for avionics software development.</li>
       </ul>
 
-      <h2 className="mb-3 mt-7 font-mono text-xl font-bold text-neutral-200">
+      <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Projects
       </h2>
       <ul className="list-disc pl-6 leading-relaxed text-neutral-400">
@@ -83,7 +83,7 @@ export default function ResumePage() {
         </li>
       </ul>
 
-      <h2 className="mb-3 mt-7 font-mono text-xl font-bold text-neutral-200">
+      <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Presentations
       </h2>
       <ul className="list-disc pl-6 leading-relaxed text-neutral-400">
@@ -92,7 +92,7 @@ export default function ResumePage() {
         <li>APS Global Summit — Scheduled Oral Presenter, Apr 2027</li>
       </ul>
 
-      <h2 className="mb-3 mt-7 font-mono text-xl font-bold text-neutral-200">
+      <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Activities
       </h2>
       <ul className="list-disc pl-6 leading-relaxed text-neutral-400">
@@ -100,7 +100,7 @@ export default function ResumePage() {
         <li>CSULB Astronomy Club — Treasurer, Aug 2024–Sep 2025</li>
       </ul>
 
-      <h2 className="mb-3 mt-7 font-mono text-xl font-bold text-neutral-200">
+      <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Skills
       </h2>
       <p className="leading-relaxed text-neutral-400">
