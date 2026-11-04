@@ -11,11 +11,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <article className="mx-auto w-full max-w-3xl px-6 py-12 sm:px-8 sm:py-16">
-      <h1 className="mb-6 font-sans text-3xl font-semibold tracking-tight text-neutral-100 sm:text-4xl">
-        Blog
-      </h1>
-
+    <article className="mx-auto w-full max-w-3xl px-6 pb-12 pt-8 sm:px-8 sm:pt-10 sm:pb-16">
       <Suspense
         fallback={
           <p className="leading-relaxed text-neutral-400">Loading posts...</p>
@@ -31,13 +27,20 @@ async function PostList() {
   const posts = await getPosts();
 
   return (
-    <ul className="mt-8 list-disc space-y-1 pl-5 text-neutral-200 marker:text-neutral-200">
-      {posts.map(({ slug, title, date, description }) => (
-        <li className="border-b border-white/10 py-5 last:border-0" key={slug}>
-          <Link className="font-bold hover:underline" href={`/Blog/${slug}`}>
-            {title}
+    <ul className="divide-y divide-white/10 border-y border-white/10">
+      {posts.map(({ slug, title, date }) => (
+        <li key={slug}>
+          <Link
+            className="group flex flex-col gap-2 py-5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400 sm:flex-row sm:items-baseline sm:justify-between"
+            href={`/Blog/${slug}`}
+          >
+            <span className="font-semibold text-neutral-100 transition-colors group-hover:text-blue-400">
+              {title}
+            </span>
+            <time dateTime={date} className="text-xs tracking-wide text-neutral-500">
+              {date}
+            </time>
           </Link>
-          <p className="mt-2 text-xs tracking-wide text-neutral-500">{date}</p>
         </li>
       ))}
     </ul>

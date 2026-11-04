@@ -15,7 +15,7 @@ export default function Home() {
       <section className="grid gap-8 md:grid-cols-[minmax(0,1fr)_18rem] md:items-center">
         <div>
           <h1 className="mb-6 font-sans text-3xl font-semibold tracking-tight text-neutral-100 sm:text-4xl">
-            Chenchu Yakasiri Saravanan
+            Chenchu Yakasiri
           </h1>
 
           <p className="leading-relaxed text-neutral-400">
