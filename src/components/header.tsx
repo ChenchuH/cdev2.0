@@ -10,7 +10,7 @@ const brandClass =
   "font-mono font-semibold text-neutral-100";
 
 const linkClass =
-  "text-sm text-neutral-400 transition-colors hover:text-blue-400";
+  "text-sm text-neutral-100 transition-colors hover:text-blue-400";
 
 export default function Header() {
   return (

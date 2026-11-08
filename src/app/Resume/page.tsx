@@ -12,24 +12,14 @@ export default function ResumePage() {
       <h1 className="mb-6 font-sans text-3xl font-semibold tracking-tight text-neutral-100 sm:text-4xl">
         Chenchu Yakasiri Saravanan
       </h1>
-
-      <p className="leading-relaxed text-neutral-400">
-        US Permanent Resident ·{" "}
-        <a
-          className="text-blue-500 transition-colors duration-200 hover:text-indigo-400"
-          href="mailto:ynchenchuh@icloud.com"
-        >
-          ynchenchuh@icloud.com
-        </a>
-      </p>
-
+      
       <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Education
       </h2>
-      <p className="leading-relaxed text-neutral-400">
+      <p className="leading-relaxed text-neutral-100/90">
         California State University, Long Beach — B.S. Physics, expected Dec 2027
       </p>
-      <p className="leading-relaxed text-neutral-400">
+      <p className="leading-relaxed text-neutral-100/90">
         Concentration: Experimental Condensed Matter Physics
       </p>
 
@@ -40,10 +30,10 @@ export default function ResumePage() {
       <h3 className="mb-1 mt-6 font-sans text-lg font-semibold text-neutral-100">
         Undergraduate Researcher — CSULB Nanoelectronics Group
       </h3>
-      <p className="leading-relaxed text-neutral-400">
+      <p className="leading-relaxed text-neutral-100/90">
         Jun 2024–Present · Long Beach, California
       </p>
-      <ul className="list-disc pl-6 leading-relaxed text-neutral-400">
+      <ul className="list-disc pl-6 leading-relaxed text-neutral-100/90">
         <li>Adapted a hemispherical PC/PDMS dome stamp for precise dry transfer of PtTe₂ crystals.</li>
         <li>Refined stamp fabrication and transfer parameters to improve pickup consistency and target smaller flakes.</li>
         <li>Started adapting the method to CrₓPt₁₋ₓTe₂ and developing bottom-contact Hall bars.</li>
@@ -53,10 +43,10 @@ export default function ResumePage() {
       <h3 className="mb-1 mt-6 font-sans text-lg font-semibold text-neutral-100">
         ADCS Engineer — CSULB Shark-Sat 1
       </h3>
-      <p className="leading-relaxed text-neutral-400">
+      <p className="leading-relaxed text-neutral-100/90">
         Aug 2023–Nov 2024 · Long Beach, California
       </p>
-      <ul className="list-disc pl-6 leading-relaxed text-neutral-400">
+      <ul className="list-disc pl-6 leading-relaxed text-neutral-100/90">
         <li>Led the initial ADCS design draft with vendors and industry advisors.</li>
         <li>Helped design detumble simulations for avionics software development.</li>
       </ul>
@@ -64,7 +54,7 @@ export default function ResumePage() {
       <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Projects
       </h2>
-      <ul className="list-disc pl-6 leading-relaxed text-neutral-400">
+      <ul className="list-disc pl-6 leading-relaxed text-neutral-100/90">
         <li>
           <strong>WeatherCLI</strong> — Python weather CLI using Open-Meteo,
           Geopy, and Rich; includes location search, unit conversion, and
@@ -88,7 +78,7 @@ export default function ResumePage() {
       <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Presentations
       </h2>
-      <ul className="list-disc pl-6 leading-relaxed text-neutral-400">
+      <ul className="list-disc pl-6 leading-relaxed text-neutral-100/90">
         <li>APS Global Summit — Poster Presenter, 2025</li>
         <li>APS Far West — Poster Presenter, 2026</li>
         <li>APS Global Summit — Scheduled Oral Presenter, Apr 2027</li>
@@ -97,7 +87,7 @@ export default function ResumePage() {
       <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Activities
       </h2>
-      <ul className="list-disc pl-6 leading-relaxed text-neutral-400">
+      <ul className="list-disc pl-6 leading-relaxed text-neutral-100/90">
         <li>Western Museum of Flight — Model Restoration Technician and Docent, Feb 2024–Jul 2025</li>
         <li>CSULB Astronomy Club — Treasurer, Aug 2024–Sep 2025</li>
       </ul>
@@ -105,20 +95,20 @@ export default function ResumePage() {
       <h2 className="mb-3 mt-10 border-b border-white/10 pb-2 font-sans text-xl font-semibold tracking-tight text-neutral-100">
         Skills
       </h2>
-      <p className="leading-relaxed text-neutral-400">
+      <p className="leading-relaxed text-neutral-100/90">
         Python, Bash, TypeScript/JavaScript, HTML/CSS, MATLAB, LaTeX
       </p>
-      <p className="leading-relaxed text-neutral-400">
+      <p className="leading-relaxed text-neutral-100/90">
         Next.js, Cloudflare, AWS, Git/GitHub, Jupyter Notebooks
       </p>
-      <p className="leading-relaxed text-neutral-400">
+      <p className="leading-relaxed text-neutral-100/90">
         KiCad, 3D printing, SolidWorks, cryostat control, Raman spectroscopy,
         AFM, EDS, WiTec Suite, AGI Toolkit
       </p>
 
-      <p className="mt-7 leading-relaxed text-neutral-400">
+      <p className="mt-7 leading-relaxed text-neutral-100/90">
         <a
-          className="text-blue-500 transition-colors duration-200 hover:text-indigo-400"
+          className="font-medium underline decoration-white/40 underline-offset-4 transition-colors duration-200 text-sky-200 hover:text-white hover:decoration-white"
           href="/Chenchu_Resume_2027.pdf"
           download
         >

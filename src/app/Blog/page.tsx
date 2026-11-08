@@ -14,7 +14,7 @@ export default function BlogPage() {
     <article className="mx-auto w-full max-w-3xl px-6 pb-12 pt-8 sm:px-8 sm:pt-10 sm:pb-16">
       <Suspense
         fallback={
-          <p className="leading-relaxed text-neutral-400">Loading posts...</p>
+          <p className="leading-relaxed text-neutral-100/90">Loading posts...</p>
         }
       >
         <PostList />
@@ -37,7 +37,7 @@ async function PostList() {
             <span className="font-semibold text-neutral-100 transition-colors group-hover:text-blue-400">
               {title}
             </span>
-            <time dateTime={date} className="text-xs tracking-wide text-neutral-500">
+            <time dateTime={date} className="text-xs tracking-wide text-neutral-100/90">
               {date}
             </time>
           </Link>

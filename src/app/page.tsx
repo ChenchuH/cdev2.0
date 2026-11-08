@@ -19,7 +19,7 @@ export default function Home() {
             Chenchu Yakasiri
           </h1>
 
-          <p className="leading-relaxed text-neutral-400">
+          <p className="leading-relaxed text-neutral-100/90">
             I’m a physics student and undergraduate researcher at California State
             University, Long Beach, where I’m part of the CSULB Nanoelectronics Group.
             My research takes place in a TMD materials fabrication-focused lab.
@@ -27,15 +27,6 @@ export default function Home() {
             technical skills. I also enjoy rock climbing and working on cars.
           </p>
         </div>
-
-        <Image
-          src="/climbing.webp"
-          alt="Chenchu climbing an indoor wall"
-          width={876}
-          height={876}
-          sizes="(max-width: 768px) 100vw, 288px"
-          className="mx-auto aspect-square w-full max-w-xs rounded-xl object-cover md:mx-0 md:w-72 md:justify-self-end"
-        />
       </section>
 
       <section>

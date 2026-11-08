@@ -20,10 +20,10 @@ export default function CopyEmailButton() {
       type="button"
       onClick={copyEmail}
       aria-live="polite"
-      className={`transition-colors duration-200 ${
+      className={`font-medium underline decoration-white/40 underline-offset-4 transition-colors duration-200 ${
         copied
-          ? "font-semibold text-green-400"
-          : "text-blue-500 hover:text-indigo-400"
+          ? "text-emerald-300"
+          : "text-sky-200 hover:text-white hover:decoration-white"
       }`}
     >
       {copied ? "Email copied!" : "Reach out via email"}
