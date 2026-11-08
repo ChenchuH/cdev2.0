@@ -1,7 +1,8 @@
-// src/app/page.tsx Home page for Chenchu.Dev
+// src/app/page.tsx
 
 import { Metadata } from "next";
 import Image from "next/image";
+import CopyEmailButton from "../components/CopyEmailButton";
 
 export const metadata: Metadata = {
   title: "Home - chenchu.dev",
@@ -43,18 +44,7 @@ export default function Home() {
         </h2>
 
         <div className="flex gap-6">
-          <a
-            className="text-blue-500 transition-colors duration-200 hover:text-indigo-400"
-            href="https://github.com/ChenchuH"
-          >
-            GitHub
-          </a>
-          <a
-            className="text-blue-500 transition-colors duration-200 hover:text-indigo-400"
-            href="mailto:ynchenchuh@gmail.com"
-          >
-            Email
-          </a>
+          <CopyEmailButton />
         </div>
       </section>
     </article>
